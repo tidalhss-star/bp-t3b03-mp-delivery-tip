@@ -1,199 +1,361 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>마포 식당 가맹점 모집 | 창업 성공의 지름길</title>
+    <meta name="description" content="마포에서 진짜 잘되는 식당 가맹점, 지금 바로 모집합니다. 20년 노하우로 안정적인 수익 보장. 창업 부담 DOWN, 성공 확률 UP! 전화 한 통이면 모든 솔루션 제공.">
+    <meta name="keywords" content="마포 가맹점 모집, 식당 창업, 식당 가맹점, 마포 창업, 외식 창업, 요식업 가맹, 마포 식당">
+    <link rel="canonical" href="https://t3b03-mp-delivery-tip.pages.dev">
+    
+    <!-- OG 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b03-mp-delivery-tip.pages.dev">
+    <meta property="og:title" content="마포 식당 가맹점 모집 | 창업 성공의 지름길">
+    <meta property="og:description" content="마포에서 진짜 잘되는 식당 가맹점, 지금 바로 모집합니다. 20년 노하우로 안정적인 수익 보장.">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="마포 식당 가맹점 모집 | 창업 성공의 지름길">
+    <meta name="twitter:description" content="마포에서 진짜 잘되는 식당 가맹점, 지금 바로 모집합니다. 20년 노하우로 안정적인 수익 보장.">
+
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "마포 식당 가맹점 모집",
+        "description": "마포 지역에서 식당 가맹점을 모집합니다. 20년 경력의 노하우로 창업부터 운영까지 전 과정을 지원합니다.",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressCountry": "KR"
+        },
+        "url": "https://t3b03-mp-delivery-tip.pages.dev",
+        "areaServed": "마포구 및 인근 지역",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+82-10-6279-0862",
+            "contactType": "예약 및 문의"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* ===== 리셋 & 기본 ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.2;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #ff3b00; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #fff; background: #ff3b00; text-decoration: none; }
+        img, svg { display: block; max-width: 100%; }
+
+        /* ===== 텍스처 배경 (raw css) ===== */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                repeating-linear-gradient(45deg, rgba(255,59,0,0.03) 0px, rgba(255,59,0,0.03) 2px, transparent 2px, transparent 8px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ===== 타이포그래피 ===== */
+        h1 { font-size: clamp(3.5rem, 12vw, 6rem); line-height: 0.9; text-transform: uppercase; letter-spacing: -0.02em; }
+        h2 { font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; text-transform: uppercase; letter-spacing: -0.01em; }
+        h3 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+        p, li, blockquote { font-family: 'system-ui', 'Segoe UI', sans-serif; font-weight: 400; line-height: 1.5; font-size: 1.1rem; }
+        .mono { font-family: 'Courier New', monospace; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; }
+
+        /* ===== 레이아웃 ===== */
+        .container { 
+            position: relative; z-index: 1;
+            padding: 72px 24px; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+        }
+        .full-bleed { 
+            width: 100vw; 
+            margin-left: calc(-50vw + 50%); 
+            padding-left: 24px; padding-right: 24px;
+        }
+        section + section { margin-top: 120px; }
+
+        /* ===== 컴포넌트 ===== */
+        .btn {
+            display: inline-block;
+            background: #ff3b00;
+            color: #fff;
+            padding: 16px 48px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 1.8rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 4px solid #fff;
+            transform: rotate(-1deg);
+            transition: all 0.2s ease;
+            box-shadow: 8px 8px 0 rgba(255,59,0,0.4);
+        }
+        .btn:hover {
+            background: #fff;
+            color: #000;
+            border-color: #ff3b00;
+            transform: rotate(1deg) scale(1.02);
+            box-shadow: 12px 12px 0 rgba(255,59,0,0.6);
+        }
+        .btn-tel {
+            display: inline-block;
+            background: #000;
+            color: #ff3b00;
+            padding: 12px 36px;
+            font-family: 'Courier New', monospace;
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 4px solid #ff3b00;
+            transform: skewX(-5deg);
+            transition: all 0.2s;
+        }
+        .btn-tel:hover {
+            background: #ff3b00;
+            color: #000;
+            border-color: #fff;
+            transform: skewX(5deg) scale(1.05);
+        }
+
+        /* 카드 */
+        .card {
+            background: #111;
+            border: 4px solid #ff3b00;
+            padding: 32px 28px;
+            margin-bottom: 24px;
+            transform: rotate(-0.5deg);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: rotate(0.5deg) scale(1.01); border-color: #fff; }
+        .card .stars { color: #ff3b00; font-size: 1.6rem; letter-spacing: 4px; }
+        .card .meta { display: flex; gap: 16px; align-items: center; margin-top: 12px; font-family: 'Courier New', monospace; font-size: 0.9rem; color: #aaa; }
+        .card .avatar { font-size: 2.8rem; line-height: 1; }
+
+        /* ===== 헤더 & 네비 ===== */
+        header {
+            background: #000;
+            border-bottom: 4px solid #ff3b00;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; top: 0; z-index: 100;
+        }
+        .logo {
+            font-size: 2.2rem;
+            letter-spacing: -1px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 3px solid #ff3b00;
+            padding: 4px 12px;
+            transform: rotate(-2deg);
+        }
+        .logo:hover { background: #ff3b00; color: #000; border-color: #fff; }
+        nav { display: flex; gap: 32px; align-items: center; }
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 1.2rem; 
+            text-transform: uppercase;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+        }
+        nav a:hover { border-bottom-color: #ff3b00; color: #ff3b00; }
+
+        /* 햄버거 */
+        .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; padding: 8px; background: none; border: none; }
+        .hamburger span { display: block; width: 36px; height: 4px; background: #ff3b00; transition: 0.3s; }
+        #menu-toggle { display: none; }
+        #menu-toggle:checked + .hamburger span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+        #menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
+        #menu-toggle:checked + .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+        /* ===== 히어로 ===== */
+        .hero {
+            position: relative;
+            padding: 72px 24px 120px;
+            border-bottom: 4px solid #ff3b00;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -20%; right: -10%;
+            width: 400px; height: 400px;
+            background: repeating-linear-gradient(45deg, #ff3b00 0px, #ff3b00 4px, transparent 4px, transparent 20px);
+            transform: rotate(15deg) skewX(-10deg);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .hero h1 { margin-bottom: 24px; }
+        .hero .subtitle { font-size: 1.6rem; max-width: 800px; margin-bottom: 48px; border-left: 6px solid #ff3b00; padding-left: 24px; }
+        .hero .actions { display: flex; gap: 32px; flex-wrap: wrap; align-items: center; }
+
+        /* ===== 비대칭 블록 ===== */
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .asymmetric-grid.reverse { grid-template-columns: 1fr 2fr; }
+        .asymmetric-grid .box {
+            background: #0a0a0a;
+            border: 4px solid #fff;
+            padding: 48px 32px;
+            transform: rotate(1deg);
+        }
+        .asymmetric-grid .box:nth-child(2) { transform: rotate(-2deg) translateY(24px); }
+        .asymmetric-grid.reverse .box:nth-child(1) { transform: rotate(-1deg); }
+        .asymmetric-grid.reverse .box:nth-child(2) { transform: rotate(2deg) translateY(-24px); }
+
+        /* ===== 리뷰 섹션 ===== */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        /* ===== 푸터 ===== */
+        footer {
+            border-top: 4px solid #ff3b00;
+            padding: 48px 24px 24px;
+            margin-top: 120px;
+            text-align: center;
+            background: #0a0a0a;
+        }
+        footer .footer-links { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-bottom: 32px; }
+        footer .footer-links a { color: #ff3b00; text-transform: uppercase; font-size: 1rem; }
+        footer .copyright { font-family: 'Courier New', monospace; color: #666; font-size: 0.85rem; }
+
+        /* ===== 반응형 ===== */
+        @media (max-width: 768px) {
+            .container { padding: 48px 16px; }
+            section + section { margin-top: 80px; }
+            .hamburger { display: flex; }
+            nav { 
+                display: none; 
+                flex-direction: column; 
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: #000; 
+                border-bottom: 4px solid #ff3b00;
+                padding: 24px; 
+                gap: 20px;
+            }
+            #menu-toggle:checked ~ nav { display: flex; }
+            nav a { font-size: 1.6rem; }
+            .hero { padding: 48px 16px 80px; }
+            .hero .actions { flex-direction: column; align-items: stretch; }
+            .asymmetric-grid { grid-template-columns: 1fr; }
+            .asymmetric-grid .box:nth-child(2),
+            .asymmetric-grid.reverse .box:nth-child(2) { transform: none; }
+            .btn { font-size: 1.4rem; padding: 14px 32px; text-align: center; }
+            .btn-tel { font-size: 1.6rem; text-align: center; }
+            .review-grid { grid-template-columns: 1fr; }
+            footer .footer-links { gap: 24px; flex-direction: column; }
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2.2rem; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 32px 12px; }
+            .logo { font-size: 1.6rem; }
+            .card { padding: 20px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+<!-- 헤더 -->
+<header>
+    <a href="/" class="logo">마포<br>가맹</a>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+    </label>
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#reviews">후기</a>
+        <a href="#contact">연락처</a>
+        <a href="tel:010-6279-0862" style="border:2px solid #ff3b00; padding:6px 16px;">010-6279-0862</a>
+    </nav>
+</header>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+<main>
+    <!-- 히어로 섹션 -->
+    <section class="hero full-bleed" style="background:#000; position:relative;">
+        <div style="position:relative; z-index:2; max-width:1400px; margin:0 auto;">
+            <h1>식당 창업<br>가맹으로<br>시작하자</h1>
+            <div class="subtitle">
+                마포에서 20년 외식 노하우로 증명된 시스템.<br>
+                너 혼자 시작하지 말고, 우리랑 같이 해. 부담은 반으로, 성공은 두 배로.
+            </div>
+            <div class="actions">
+                <a href="tel:010-6279-0862" class="btn-tel">▶ 010-6279-0862</a>
+                <a href="#about" class="btn">더 알아보기 →</a>
+            </div>
+            <p style="margin-top:48px; font-size:0.9rem; color:#888; font-family:'Courier New', monospace;">
+                * 상담은 5분 컷. 부담 없이 전화 주세요.
+            </p>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+    </section>
+
+    <!-- 소개 (비대칭) -->
+    <section id="about" class="container">
+        <h2 style="margin-bottom:48px; border-bottom:4px solid #ff3b00; display:inline-block; padding-bottom:8px;">왜 우리인가?</h2>
+        <div class="asymmetric-grid">
+            <div class="box">
+                <h3 style="color:#ff3b00; font-size:2.2rem;">#1. 검증된 시스템</h3>
+                <p style="margin-top:24px;">우리 가맹점은 이미 마포에서 5개 직영점으로 검증됐어. 메뉴, 레시피, 배송, 심지어 직원 교육 매뉴얼까지 다 갖춰져 있어. 너는 그냥 운영에만 집중하면 돼.</p>
+                <p style="margin-top:16px; font-family:'Courier New', monospace; background:#ff3b00; color:#000; display:inline-block; padding:4px 12px; font-size:0.9rem;">월 평균 매출 6,500만원 ↑</p>
+            </div>
+            <div class="box">
+                <h3 style="color:#ff3b00; font-size:2.2rem;">#2. 창업 부담 ZERO</h3>
+                <p style="margin-top:24px;">가맹비는 0원. 인테리어, 초도 물품, 교육까지 전부 본사 지원. 너는 맛집 사장님으로서의 꿈만 가져와. 우리가 다 세팅해줄게.</p>
+                <p style="margin-top:16px; font-family:'Courier New', monospace; background:#000; color:#ff3b00; border:2px solid #ff3b00; display:inline-block; padding:4px 12px; font-size:0.9rem;">초기 자본 3,000만원 ↓</p>
+            </div>
+        </div>
+        <div class="asymmetric-grid reverse" style="margin-top:48px;">
+            <div class="box">
+                <h3 style="color:#ff3b00; font-size:2.2rem;">#3. 마포만의 노하우</h3>
+                <p style="margin-top:24px;">홍대, 합정, 상암동 등 마포 지역별로 타겟 고객이 달라. 우리는 20년간 쌓은 데이터로 너의 가게에 딱 맞는 전략을 짜줘. 배달/포장/홀 비율까지 다 계산해서.</p>
+            </div>
+            <div class="box">
+                <h3 style="color:#ff3b00; font-size:2.2rem;">#4. 지속적인 관리</h3>
+                <p style="margin-top:24px;">오픈하고 끝이 아니야. 매달 본사 매니저가 방문해서 문제점 체크하고, 신메뉴 개발, 마케팅까지 다 해줘. 너는 진짜 '사장님' 역할만 하면 돼.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- UGC 리뷰 -->
+    <section id="reviews" class="container">
+        <h2 style="display:flex; align-items:center; gap:16px; margin-bottom:48px;">
+            <span style="font-size:3rem; line-height:1;">🗣️</span>
+            <span>진짜 사장님들의 후기</span>
+        </h2>
+        <div class="review-grid">
+            <!-- 리뷰 1 -->
+            <div class="card">
+                <div class="avatar">👩‍🍳</div>
+                <div class="stars">★★★★★</div>
+                <p style="margin:16px 0;">"진짜 대박이에요. 오픈 첫 달부터 월 매출 5천만원 찍었
 </body>
 </html>
