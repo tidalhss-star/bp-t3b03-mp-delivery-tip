@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b03-mp-delivery-tip</title>
+  <meta name="description" content="t3b03-mp-delivery-tip에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://t3b03-mp-delivery-tip.maphoshirts.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-color: #fcfbf9;
+ --text-color: #111111;
+ --accent-color: #ff3b30;
+ --border-color: #111111;
+ --gray-light: #f5f5f7;
+ --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: var(--font-sans);
+ line-height: 1.5;
+ padding: 0 24px;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+
+ /* Header & Navigation */
+ .n-nav-bvc5 {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 32px 0;
+ border-bottom: 2px solid var(--border-color);
+ }
+
+ .n-nav-bvc5 .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ letter-spacing: -1px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--text-color);
+ }
+
+ .k-grid-qe36-links {
+ display: flex;
+ gap: 32px;
+ }
+
+ .k-grid-qe36-links a {
+ color: var(--text-color);
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ }
+
+ .k-grid-qe36-links a:hover {
+ color: var(--accent-color);
+ }
+
+ /* Hero / Top Section */
+ .q-top-ef14 {
+ padding: 120px 0 80px 0;
+ border-bottom: 2px solid var(--border-color);
+ }
+
+ .q-top-ef14 h1 {
+ font-size: 4.5rem;
+ line-height: 1.05;
+ font-weight: 900;
+ letter-spacing: -3px;
+ margin-bottom: 40px;
+ text-transform: uppercase;
+ }
+
+ .q-top-ef14 p {
+ font-size: 1.5rem;
+ line-height: 1.4;
+ max-width: 800px;
+ font-weight: 500;
+ color: #333;
+ }
+
+ /* Grid Layout for Information Cards */
+ .k-grid-qe36 {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2px;
+ background-color: var(--border-color);
+ margin: 80px 0;
+ border: 2px solid var(--border-color);
+ }
+
+ .k-item-yfht {
+ background-color: #ffffff;
+ padding: 48px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ min-height: 400px;
+ }
+
+ .k-item-yfht h3 {
+ font-size: 1.8rem;
+ font-weight: 900;
+ line-height: 1.2;
+ letter-spacing: -1px;
+ margin-bottom: 24px;
+ }
+
+ .k-item-yfht p {
+ font-size: 1rem;
+ line-height: 1.6;
+ color: #444;
+ margin-bottom: 40px;
+ }
+
+ .v-btn-khe2 {
+ align-self: flex-start;
+ display: inline-block;
+ background-color: var(--border-color);
+ color: #ffffff;
+ padding: 16px 32px;
+ font-weight: 700;
+ font-size: 0.9rem;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ transition: background-color 0.2s ease;
+ }
+
+ .v-btn-khe2:hover {
+ background-color: var(--accent-color);
+ }
+
+ /* Editorial Section */
+ .editorial-section {
+ padding: 80px 0;
+ border-bottom: 2px solid var(--border-color);
+ }
+
+ .editorial-section h2 {
+ font-size: 2.5rem;
+ font-weight: 900;
+ letter-spacing: -1.5px;
+ margin-bottom: 40px;
+ }
+
+ .editorial-content {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 60px;
+ }
+
+ .editorial-content p {
+ font-size: 1.1rem;
+ line-height: 1.7;
+ color: #333;
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ padding: 80px 0;
+ }
+
+ .faq-section h2 {
+ font-size: 2.5rem;
+ font-weight: 900;
+ letter-spacing: -1.5px;
+ margin-bottom: 60px;
+ }
+
+ .faq-wrapper {
+ max-width: 900px;
+ }
+
+ .faq-item {
+ border-bottom: 1px solid var(--border-color);
+ padding: 32px 0;
+ }
+
+ .faq-item:first-child {
+ padding-top: 0;
+ }
+
+ .faq-item h4 {
+ font-size: 1.3rem;
+ font-weight: 800;
+ margin-bottom: 16px;
+ letter-spacing: -0.5px;
+ }
+
+ .faq-item p {
+ font-size: 1.05rem;
+ line-height: 1.6;
+ color: #444;
+ }
+
+ /* Footer */
+ footer {
+ border-top: 2px solid var(--border-color);
+ padding: 48px 0;
+ font-size: 0.9rem;
+ color: #666;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 1024px) {
+ .k-grid-qe36 {
+ grid-template-columns: 1fr;
+ }
+ .editorial-content {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ }
+
+ @media (max-width: 768px) {
+ .q-top-ef14 {
+ padding: 80px 0 40px 0;
+ }
+ .q-top-ef14 h1 {
+ font-size: 2.8rem;
+ letter-spacing: -1.5px;
+ }
+ .q-top-ef14 p {
+ font-size: 1.2rem;
+ }
+ .k-grid-qe36-links {
+ display: none; /* Can be handled via hamburger menu or simplified */
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b03-mp-delivery-tip">
+  <meta property="og:description" content="t3b03-mp-delivery-tip에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://t3b03-mp-delivery-tip.maphoshirts.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="q-top-ef14">
+ <h1>THE REALITY OF MAPO.</h1>
+ <p>화려한 가맹점 모집 광고 뒤에 숨겨진 진짜 마포 상권의 실체. 성공적인 식당 창업을 위해 포장된 매출 지표가 아닌, 생존을 결정짓는 날 것 그대로의 정보와 마포의 지역적 특성을 가감 없이 분석합니다.</p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 31개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0463.html">식당 가맹점 모집 유형에서 배우는 홍대 노래방 추천정보 예약법</a>
+        <p class="post-item__summary">식당 가맹점 모집 정보를 살피다 보면 운영 시스템이 불분명한 곳은 결국 시장에서 도태된다는 사실을 알 수 있습니다. 홍대 지역에서 노래방을 이용할 때도 마찬가지로, 예약 절차부터 체계적으로 갖춰지지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0464.html">식당 가맹점 모집 기준과 공덕 셔츠룸 추천정보 확인하기</a>
+        <p class="post-item__summary">사업적인 측면에서 식당 가맹점 모집 절차를 살피는 것과 마찬가지로 특정 업소를 방문할 때도 체계적인 사전 확인이 필요합니다. 공덕 지역은 교통의 요충지라 접근성이 우수하지만, 방문 목적에 맞는 최적</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0465.html">식당 가맹점 모집 상담 전 확인하는 연남 유흥 추천정보</a>
+        <p class="post-item__summary">익숙하지 않은 동네에서 시간을 보낼 때는 작은 실수 하나가 전체 일정의 분위기를 좌우할 수 있습니다. 예를 들어 식당 가맹점 모집 홍보문만 믿고 덜컥 계약하듯, 정보 없이 유흥가를 찾았다가 낭패를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0466.html">식당 가맹점 모집 공고와 다른 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">많은 이들이 가라오케에 대해 너무 늦은 시간에만 운영된다는 오해를 가지고 있습니다. 마치 식당 가맹점 모집 광고가 전부라고 생각하는 것과 비슷한데, 실제로는 이른 저녁부터 차분하게 즐길 수 있는 공</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0467.html">식당 가맹점 모집 전략으로 바라보는 마곡 유흥 추천정보와 인원 구성의 핵심</a>
+        <p class="post-item__summary">성공적인 비즈니스를 위해 식당 가맹점 모집 과정에서 상권 분석이 필수적이듯, 마곡 지역에서의 모임 역시 장소의 성격과 인원 구성을 면밀히 따져야 합니다. 유흥 공간을 선택할 때는 단순히 화려한 외관</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0468.html">식당 가맹점 모집 기준을 적용한 합정 노래방 추천정보와 업체 비교 방법</a>
+        <p class="post-item__summary">주말 저녁 평소 즐겨 찾던 장소가 아닌 새로운 곳을 방문하려 할 때, 여러분은 어떤 기준으로 노래방을 선택하시나요? 마치 식당 가맹점 모집 시 가맹 본부의 안정성과 서비스 질을 꼼꼼히 따져봐야 하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0469.html">식당 가맹점 모집 절차로 살펴보는 연남 클럽 추천정보와 후기 검증 단계</a>
+        <p class="post-item__summary">사업 확장 단계에서 식당 가맹점 모집 절차가 투명성을 확보해야 하듯, 클럽을 선택할 때도 단계별로 정보를 검증하는 과정이 필요합니다. 연남 지역의 역동적인 문화를 즐기기 위해 방문 전 해당 장소의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0470.html">식당 가맹점 모집 현장과 비교해보는 합정 셔츠룸 추천정보 및 가격 판단 기준</a>
+        <p class="post-item__summary">창업 시장에서 식당 가맹점 모집 공고를 접할 때 수익성을 따지는 것과 합정 지역의 유흥 문화를 즐기기 위해 셔츠룸을 선택하는 과정은 구조적으로 닮아 있다. 운영자의 시스템이 투명한지 혹은 가맹점주의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0471.html">식당 가맹점 모집 실패 사례를 통해 배우는 공덕 가라오케 추천정보 및 예약 절차</a>
+        <p class="post-item__summary">사업 확장 과정에서 식당 가맹점 모집 시 전략 없이 무분별하게 지점을 늘리다 실패하는 사례가 많다. 공덕 가라오케를 방문하려는 이용자들도 마찬가지로, 제대로 된 예약 절차나 정보 확인 없이 방문하면</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0472.html">식당 가맹점 모집 시 입지 분석처럼 중요한 상수 마사지 추천정보 및 위치 접근성 체크</a>
+        <p class="post-item__summary">창업을 위해 식당 가맹점 모집 조건을 검토할 때 가장 먼저 보는 지표는 단연 유동 인구와 접근성이다. 마사지 숍 역시 마찬가지로, 상수 지역에서 피로를 풀기 위해 방문하는 곳이 얼마나 찾기 쉽고 접</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0473.html">식당 가맹점 모집 광고를 보고 망원 노래방 추천정보를 찾을 때 주의할 점</a>
+        <p class="post-item__summary">번화가에서 식당 가맹점 모집 전단지를 유심히 살피는 사람들을 종종 목격하게 됩니다. 외식업 창업을 고민하는 이들이 늘어나면서 새로운 상권을 분석하려는 움직임이 활발해진 탓입니다. 상권 분위기를 파악</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
