@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://t3b03-mp-delivery-tip.maphoshirts.com/sitemap.xml
-Sitemap: https://t3b03-mp-delivery-tip.maphoshirts.com/sitemap-pages.xml
+Sitemap: https://mapo-startup-guide.maphoshirts.com/sitemap.xml
+Sitemap: https://mapo-startup-guide.maphoshirts.com/sitemap-pages.xml
